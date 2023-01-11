@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.maxAngularVelocity = 1.2f;
     }
     void OnMove(InputValue movementValue)
     {

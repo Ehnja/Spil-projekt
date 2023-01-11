@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 82
+  controlID: 16
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 83
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 84
+  controlID: 18
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Input
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Input
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\hilme\Marie kart
+  m_LastProjectPath: C:\Users\hilme\OneDrive\Musik\Dokumenter\1 HTX\3.g\Programmering\Spil-projekt\Marie
+    kart
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a4600000
-    m_LastClickedID: 24740
-    m_ExpandedIDs: 0000000096600000986000009a6000009c600000a260000000ca9a3b
+    m_SelectedIDs: b0600000
+    m_LastClickedID: 24752
+    m_ExpandedIDs: 000000007e600000806000008260000084600000a6830000be830000da830000808b0000848b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000096600000986000009a6000009c600000
+    m_ExpandedIDs: 000000007e600000806000008260000084600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +489,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 2efbffffda5c0000
+      m_SelectedIDs: d4890000
+      m_LastClickedID: 35284
+      m_ExpandedIDs: 4a8effff7c9dffff9a9dffffb89dffff2efbffffc65c0000d4890000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -772,9 +773,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.6686747, y: 1.8332168, z: -2.075463}
+    m_Target: {x: -10.034048, y: -32.88867, z: -164.17355}
     speed: 2
-    m_Value: {x: 1.6686747, y: 1.8332168, z: -2.075463}
+    m_Value: {x: -10.034048, y: -32.88867, z: -164.17355}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -821,13 +822,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.21739835, y: 0.51348585, z: -0.13632688, w: -0.81887347}
+    m_Target: {x: -0.6362544, y: 0.08326859, z: -0.069362596, w: -0.76387507}
     speed: 2
-    m_Value: {x: -0.21739091, y: 0.51346827, z: -0.13632222, w: -0.81884545}
+    m_Value: {x: -0.6362322, y: 0.08326569, z: -0.06936018, w: -0.7638485}
   m_Size:
-    m_Target: 1.3314689
+    m_Target: 310.62204
     speed: 2
-    m_Value: 1.3314689
+    m_Value: 310.62204
   m_Ortho:
     m_Target: 0
     speed: 2
