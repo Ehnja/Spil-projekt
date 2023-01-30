@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    /*private Rigidbody rb;
+    private Rigidbody rb;
     private float movementX;
     private float movementY;
     public float torque;
@@ -30,5 +30,5 @@ public class PlayerController : MonoBehaviour
         rb.AddRelativeForce(movement);
         float turn = Input.GetAxis("Horizontal");
         rb.AddRelativeTorque(Vector3.up * torque * turn);
-    }*/
+    }
 }
