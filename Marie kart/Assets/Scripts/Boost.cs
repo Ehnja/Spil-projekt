@@ -6,6 +6,7 @@ public class Boost : MonoBehaviour
 {
     private Rigidbody rb;
     public int BoostTime = 2;
+   
 
     private void Start()
     {
@@ -22,5 +23,6 @@ public class Boost : MonoBehaviour
             rb.drag = 0.5f;
             rb.angularDrag = 0.5f;
         }
+
     }
 }

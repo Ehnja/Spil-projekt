@@ -21,6 +21,15 @@ public class WheelController : MonoBehaviour
     private float currentAcceleration = 0f;
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
+
+    public int lapNumber;
+    public int checkpointIndex;
+
+    private void Start()
+    {
+        lapNumber = 1;
+        checkpointIndex = 0;
+    }
     private void FixedUpdate()
     {
         // Get forward/reverse acceleration from the vertical axis (W and S keys).
