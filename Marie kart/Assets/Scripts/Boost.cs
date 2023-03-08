@@ -18,10 +18,10 @@ public class Boost : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             rb.drag = 0;
-            rb.angularDrag = 1;
-            yield return new WaitForSeconds(2f);
-            rb.drag = 0.5f;
-            rb.angularDrag = 0.5f;
+            rb.angularDrag = 1.5f;
+            yield return new WaitForSeconds(BoostTime);
+            rb.drag = 0.3f;
+            rb.angularDrag = 1.2f;
         }
 
     }

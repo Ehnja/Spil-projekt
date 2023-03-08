@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LapManager : MonoBehaviour
 {
     public List<Checkpoint> checkpoints;
     public int totalLaps;
+    public TextMeshProUGUI LapNText;
+    public TextMeshProUGUI PosText;
+    public GameObject FinishTextObject;
 
+    private void Start()
+    {
+        LapNText.text = "Lap 1";
+        FinishTextObject.SetActive(false);
+    }
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -16,11 +25,13 @@ public class LapManager : MonoBehaviour
             {
                 player.checkpointIndex = 0;
                 player.lapNumber++;
-                Debug.Log($"You are now on lap {player.lapNumber} out of {totalLaps}");
-
+                if (player.lapNumber <= totalLaps)
+                {                    
+                    LapNText.text = "Lap " + player.lapNumber.ToString();                    
+                }
                 if (player.lapNumber > totalLaps)
                 {
-                    Debug.Log("You Won");
+                    FinishTextObject.SetActive(true);
                 }
             }
         }
