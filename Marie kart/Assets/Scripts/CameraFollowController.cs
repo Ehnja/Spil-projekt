@@ -9,7 +9,7 @@ public class CameraFollowController : MonoBehaviour
     public float followSpeed = 10;
     public float lookSpeed = 10;
 
-    // Start is called before the first frame update
+    // Får kameraet til at kigge i retningen af objekt (bilen)
     void LookAtTarget()
     {
         Vector3 _lookDirection = objectToFollow.position - transform.position;
@@ -17,7 +17,7 @@ public class CameraFollowController : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, _rot, lookSpeed * Time.deltaTime);
     }
 
-    // Update is called once per frame
+    // Får kameraet til at følge efter objekt (bilen)
     void MoveToTarget()
     {
         Vector3 _targetPos = objectToFollow.position +
@@ -27,6 +27,7 @@ public class CameraFollowController : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, _targetPos, followSpeed * Time.deltaTime);
     }
 
+    // Opdatere kameraets position
     private void FixedUpdate()
     {
         LookAtTarget();

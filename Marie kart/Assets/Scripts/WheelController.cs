@@ -32,16 +32,16 @@ public class WheelController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        // Get forward/reverse acceleration from the vertical axis (W and S keys).
+        // Hent acceleration fra vertikal akserne, (W og S keys)
         currentAcceleration = acceleration * Input.GetAxis("Vertical");
 
-        // If we're pressing space, give currentBreakingForce a value.
+        // Hvis der trykkes mellemrum, tildeles currentBreakForce en værdi
         if (Input.GetKey(KeyCode.Space))
             currentBreakForce = breakingForce;
         else
             currentBreakForce = 0f;
 
-        // Apply acceleration to front wheels.
+        // Tildel acceleration til forhjul
         frontRight.motorTorque = currentAcceleration;
         frontLeft.motorTorque = currentAcceleration;
 
@@ -50,12 +50,12 @@ public class WheelController : MonoBehaviour
         backRight.brakeTorque = currentBreakForce;
         backLeft.brakeTorque = currentBreakForce;
 
-        // Take care of the steering.
+        // Håndtere styringen af bilen
         currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
         frontRight.steerAngle = currentTurnAngle;
         frontLeft.steerAngle = currentTurnAngle;
 
-        // Update wheel meshes.
+        // Opdater hjul mesh, sådan hjul følger den vej der drejes til.
         UpdateWheel(frontRight, frontRightTransform);
         UpdateWheel(frontLeft, frontLeftTransform);
         UpdateWheel(backRight, backRightTransform);
@@ -64,12 +64,12 @@ public class WheelController : MonoBehaviour
 
     void UpdateWheel(WheelCollider col, Transform trans)
     {
-        // Get wheel collider state.
+        // Hent wheel collider position
         Vector3 position;
         Quaternion rotation;
         col.GetWorldPose(out position, out rotation);
 
-        // Set wheel transform state.
+        // Tildel wheel transform position
         trans.position = position;
         trans.rotation = rotation * Quaternion.Euler(0,0,90);
     }

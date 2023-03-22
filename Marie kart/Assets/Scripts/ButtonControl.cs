@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ButtonControl : MonoBehaviour
 {
+
+    // Skifter scene til gameScene, vha. index værdi.
     public void playGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    // Afslutter spillet
     public void quit()
-    {
-        Debug.Log("quit!");
+    {        
         Application.Quit();
     }
 

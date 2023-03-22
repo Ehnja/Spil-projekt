@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     public int index;
-
+    // Tjekker om bilen rammer et checkpoint, og gemmer hvilket checkpoint man er nået til
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
